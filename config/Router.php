@@ -13,9 +13,23 @@ class Router
 
     public function handleRequest(array $get) : void
     {
-        if(!isset($get["route"]))
+        if (isset($get['route']) && ($get['route'] === 'home'))
         {
             $this->ac->home();
         }
+        
+
+
+
+
+
+        elseif(!isset($get["route"]))
+        {
+            $this->ac->home();
+        }
+        else
+        {
+            $this->ac->notFound();
+        } 
     }
 }

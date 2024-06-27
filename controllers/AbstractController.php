@@ -5,13 +5,22 @@ abstract class AbstractController
 {
   
 
-    public function __construct(string $file, protected string $currentLang = "fr")
+    public function __construct()
     {
        
     }
     
-    protected function render(string $template, array $data) : void
+    public function home() : void
     {
-        require "templates/layout.phtml";
+      $template = "home";
+      require "templates/layout.phtml";
+      
     }
+    public function notFound(): void 
+    {
+    $template = "404";
+    require "templates/layout.phtml";
+    }
+
+ 
 }
