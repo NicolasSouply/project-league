@@ -13,3 +13,7 @@ require "managers/TeamManager.php";
 
 /* CONTROLLERS */
 require "controllers/AbstractController.php";
+
+
+/* config */
+require "config/Router.php";

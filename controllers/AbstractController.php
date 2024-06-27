@@ -1,7 +1,7 @@
 
 <?php
 
-abstract class AbstractController
+class AbstractController
 {
   private AbstractManager $am;
     public function __construct()
