@@ -3,9 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>THE LEAGUE</title>
 </head>
 <body>
-  
-</body>
+        <header class="header">
+          <p class="titre">THE LEAGUE</p>
+            <nav>
+                <ul class="navbar">
+                    <li class="rubrique">
+                        <a href="index.php?route=login">LES TEAMS</a>
+                    </li>
+                    <li class="rubrique">
+                        <a href="index.php?route=register">LES PLAYERS</a>
+                    </li>
+                    <li class="rubrique">
+                        <a href="index.php?route=profile">LES MATCHS</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="container">
+        <?php
+            require "templates/$template.phtml";
+        ?>
+        </main>
+    </body>
 </html>
