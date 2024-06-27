@@ -6,7 +6,10 @@
 
 
 //MANAGERS
-require "manager/AbstractManager.php";
-require "manager/GameManager.php";
-require "manager/PlayerManager.php";
-require "manager/TeamManager.php";
+require "managers/AbstractManager.php";
+require "managers/GameManager.php";
+require "managers/PlayerManager.php";
+require "managers/TeamManager.php";
+
+/* CONTROLLERS */
+require "controllers/AbstractController.php";
