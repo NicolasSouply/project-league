@@ -3,11 +3,10 @@
 
 abstract class AbstractController
 {
-  
-
+  private AbstractManager $am;
     public function __construct()
     {
-       
+       $this->am = new AbstractManager();
     }
     
     public function home() : void
