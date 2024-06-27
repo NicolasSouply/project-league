@@ -2,12 +2,14 @@
 
 class Router
 {
-    private AbstractController $ac;
+    private PlayerController $pc;
+    private TeamController $tc;
+    
     
 
     public function __construct()
     {
-        $this->ac = new AbstractController();
+        $this->pc = new PlayerController();
 
     }
 
@@ -15,12 +17,9 @@ class Router
     {
         if (isset($get['route']) && ($get['route'] === 'home'))
         {
-            $this->ac->home();
+            $this->pc->home();
         }
         
-
-
-
 
 
         elseif(!isset($get["route"]))

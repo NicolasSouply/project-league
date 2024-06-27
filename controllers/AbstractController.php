@@ -1,25 +1,19 @@
 
 <?php
 
-class AbstractController
+abstract class AbstractController
 {
-  private AbstractManager $am;
+  
     public function __construct()
     {
-       $this->am = new AbstractManager();
+       
     }
+    protected function render(string $template, array $data) : void
+    {
+        require "templates/layout.phtml";
+    }
+  
     
-    public function home() : void
-    {
-      $template = "home";
-      require "templates/layout.phtml";
-      
-    }
-    public function notFound(): void 
-    {
-    $template = "404";
-    require "templates/layout.phtml";
-    }
 
  
 }

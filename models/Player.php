@@ -40,7 +40,7 @@ class Player {
     {
         return $this->team;
     }
-    public function setTeam(): void
+    public function setTeam(int $team): void
     {
         $this->team = $team;
     }
